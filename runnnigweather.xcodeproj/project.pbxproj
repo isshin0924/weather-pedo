@@ -33,6 +33,7 @@
 		1B5D16761DDD637D009E3B4E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5D16751DDD637D009E3B4E /* CoreLocation.framework */; };
 		1B5D16781DDD6383009E3B4E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5D16771DDD6383009E3B4E /* CoreImage.framework */; };
 		1BA185AA1DDFB160005D23A6 /* road.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BA185A91DDFB160005D23A6 /* road.jpg */; };
+		1BA37AA81DE3D1E600F942AB /* indexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA37AA71DE3D1E600F942AB /* indexViewController.swift */; };
 		1BF5CE3B1DDF930100B203B5 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BF5CE3A1DDF930100B203B5 /* wallpaper.jpg */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		1B5D16751DDD637D009E3B4E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1B5D16771DDD6383009E3B4E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		1BA185A91DDFB160005D23A6 /* road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = road.jpg; sourceTree = "<group>"; };
+		1BA37AA71DE3D1E600F942AB /* indexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = indexViewController.swift; sourceTree = "<group>"; };
 		1BF5CE3A1DDF930100B203B5 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 				1B0AA5001DDD5A9800AAE9BA /* runner60.png */,
 				1B0AA4CF1DDD566400AAE9BA /* AppDelegate.swift */,
 				1B0AA4D11DDD566400AAE9BA /* ViewController.swift */,
+				1BA37AA71DE3D1E600F942AB /* indexViewController.swift */,
 				1B0AA5091DDD5E9E00AAE9BA /* SecondViewController.swift */,
 				1B0AA4D31DDD566400AAE9BA /* Main.storyboard */,
 				1B0AA4D61DDD566400AAE9BA /* Assets.xcassets */,
@@ -350,6 +353,7 @@
 				1B0AA50A1DDD5E9E00AAE9BA /* SecondViewController.swift in Sources */,
 				1B0AA4D21DDD566400AAE9BA /* ViewController.swift in Sources */,
 				1B0AA4D01DDD566400AAE9BA /* AppDelegate.swift in Sources */,
+				1BA37AA81DE3D1E600F942AB /* indexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

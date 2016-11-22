@@ -16,8 +16,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UINavigationCon
     // 湿度用のラベル.
     var humidty: UILabel!
     
-    // 経度表示用のラベル.
-    var myLongitudeLabel: UILabel!
+    var temp: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     
     // UIView系
@@ -67,8 +66,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UINavigationCon
         humidty.layer.position = CGPoint(x: 340, y:190)
         
         // 軽度表示用のラベルを生成.
-        myLongitudeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 100))
-        myLongitudeLabel.layer.position = CGPoint(x: 340, y:220)
+        temp = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 100))
+        temp.layer.position = CGPoint(x: 340, y:220)
         
         // まだ承認が得られていない場合は、認証ダイアログを表示.
         //myLocationManager.requestWhenInUseAuthorization()
@@ -137,13 +136,13 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UINavigationCon
         //humidty.text = "緯度：\(manager.location!.coordinate.latitude)"
         //humidty.textAlignment = .center
         print(manager.location!.coordinate.longitude)
-        //myLongitudeLabel.text = "hoge"
-        myLongitudeLabel.text = "経度：\(manager.location!.coordinate.longitude)"
-        //myLongitudeLabel.textAlignment = .center
+        //temp.text = "hoge"
+        //temp.text = "経度：\(manager.location!.coordinate.longitude)"
+        //temp.textAlignment = .center
         
         
         self.view.addSubview(humidty)
-        self.view.addSubview(myLongitudeLabel)
+        self.view.addSubview(temp)
         
         let url = URL(string: "http://api.openweathermap.org/data/2.5/weather?lat=\(String(manager.location!.coordinate.latitude))&lon=\(String(manager.location!.coordinate.longitude))&APPID=47a738728ecba24e1da71b745ada7b08")
         let request = URLRequest(url:url!)
@@ -222,6 +221,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate,UINavigationCon
             if (key as! String == "main") {
                 var result = data as! NSDictionary
                 self.humidty.text = "Humidty:\(String(describing:result["humidity"]!))"
+                self.temp.text = "Temperature:\(String(describing:result["temp_min"]as!Int-273))/\(String(describing:result["temp_max"]as!Int-273))"
+                self.temp.textColor = UIColor.white
                 self.humidty.textColor = UIColor.white
             }
             
