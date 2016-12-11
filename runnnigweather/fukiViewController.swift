@@ -56,42 +56,45 @@ class fukiViewController: UIViewController,CLLocationManagerDelegate,UINavigatio
         print("hours = \(hour):\(minutes):\(seconds)")
         if(hour >= 6 && hour < 16 ){
             print("morning")
+            secondView = UIView(frame: CGRect(x:0,y: view.bounds.width-30,width: 500,height: 500))
             //secondView.backgroundColor = UIColor.white
             UIGraphicsBeginImageContext(self.view.frame.size)
-            UIImage(named: "road.jpg")?.draw(in: self.view.bounds)
-            let image2: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+            UIImage(named: "road.jpg")!.draw(in: self.view.bounds)
+            let image: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
-            secondView.backgroundColor = UIColor(patternImage: image2)
+            secondView.backgroundColor = UIColor(patternImage: image)
         }
-        if(hour >= 16 && hour < 19){print("evening")
+        else if(hour >= 16 && hour < 19){print("evening")
             //SecondViewの表示
             secondView = UIView(frame: CGRect(x:0,y: view.bounds.width-30,width: 500,height: 500))
             //secondView.backgroundColor = UIColor.white
             UIGraphicsBeginImageContext(self.view.frame.size)
-            UIImage(named: "evening.png")?.draw(in: self.view.bounds)
+            UIImage(named: "evening.png")!.draw(in: self.view.bounds)
+            let image1: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            secondView.backgroundColor = UIColor(patternImage: image1)
+
+        }
+        else if(hour >= 19){print("night")
+            //SecondViewの表示
+            secondView = UIView(frame: CGRect(x:0,y: view.bounds.width-30,width: 500,height: 500))
+            //secondView.backgroundColor = UIColor.white
+            UIGraphicsBeginImageContext(self.view.frame.size)
+            UIImage(named: "night.png")!.draw(in: self.view.bounds)
             let image2: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             secondView.backgroundColor = UIColor(patternImage: image2)
 
         }
-        if(hour >= 19){print("night")
-            //SecondViewの表示
+        else{print("earlymorning")
             secondView = UIView(frame: CGRect(x:0,y: view.bounds.width-30,width: 500,height: 500))
             //secondView.backgroundColor = UIColor.white
             UIGraphicsBeginImageContext(self.view.frame.size)
-            UIImage(named: "night.png")?.draw(in: self.view.bounds)
-            let image2: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+            UIImage(named: "night.png")!.draw(in: self.view.bounds)
+            let image3: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
-            secondView.backgroundColor = UIColor(patternImage: image2)
-
-        }
-        if(hour<=5){print("morning")
-            //secondView.backgroundColor = UIColor.white
-            UIGraphicsBeginImageContext(self.view.frame.size)
-            UIImage(named: "road.jpg")?.draw(in: self.view.bounds)
-            let image2: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
-            UIGraphicsEndImageContext()
-            secondView.backgroundColor = UIColor(patternImage: image2)
+            print(image3)
+            secondView.backgroundColor = UIColor(patternImage: image3)
         }
 
         
