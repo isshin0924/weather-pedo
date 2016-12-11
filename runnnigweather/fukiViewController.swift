@@ -11,6 +11,7 @@ import CoreLocation
 import CoreImage
 import SystemConfiguration
 import CoreMotion
+import Foundation
 
 class fukiViewController: UIViewController,CLLocationManagerDelegate,UINavigationControllerDelegate {
     //pedmeterコード
@@ -33,11 +34,66 @@ class fukiViewController: UIViewController,CLLocationManagerDelegate,UINavigatio
     var weather:UILabel!
     let bWidth: CGFloat = 200
     let bHeight: CGFloat = 50
+    let date = Date()
+    let calendar = Calendar.current
+
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //背景画像の設定
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "wallpaper.jpg")?.draw(in: self.view.bounds)
+        let image: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        view.backgroundColor = UIColor(patternImage: image)
+
+        
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let seconds = calendar.component(.second, from: date)
+        print("hours = \(hour):\(minutes):\(seconds)")
+        if(hour >= 6 && hour < 16 ){
+            print("morning")
+            //secondView.backgroundColor = UIColor.white
+            UIGraphicsBeginImageContext(self.view.frame.size)
+            UIImage(named: "road.jpg")?.draw(in: self.view.bounds)
+            let image2: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            secondView.backgroundColor = UIColor(patternImage: image2)
+        }
+        if(hour >= 16 && hour < 19){print("evening")
+            //SecondViewの表示
+            secondView = UIView(frame: CGRect(x:0,y: view.bounds.width-30,width: 500,height: 500))
+            //secondView.backgroundColor = UIColor.white
+            UIGraphicsBeginImageContext(self.view.frame.size)
+            UIImage(named: "evening.png")?.draw(in: self.view.bounds)
+            let image2: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            secondView.backgroundColor = UIColor(patternImage: image2)
+
+        }
+        if(hour >= 19){print("night")
+            //SecondViewの表示
+            secondView = UIView(frame: CGRect(x:0,y: view.bounds.width-30,width: 500,height: 500))
+            //secondView.backgroundColor = UIColor.white
+            UIGraphicsBeginImageContext(self.view.frame.size)
+            UIImage(named: "night.png")?.draw(in: self.view.bounds)
+            let image2: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            secondView.backgroundColor = UIColor(patternImage: image2)
+
+        }
+        if(hour<=5){print("morning")
+            //secondView.backgroundColor = UIColor.white
+            UIGraphicsBeginImageContext(self.view.frame.size)
+            UIImage(named: "road.jpg")?.draw(in: self.view.bounds)
+            let image2: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            secondView.backgroundColor = UIColor(patternImage: image2)
+        }
+
         
         var lavelLabel = UILabel(frame: CGRect(x: 20, y: 20, width: self.view.bounds.width, height: 100))
         var label = UILabel(frame: CGRect(x: 20, y: 60, width: self.view.bounds.width, height: 100))
@@ -84,22 +140,17 @@ class fukiViewController: UIViewController,CLLocationManagerDelegate,UINavigatio
             
         
         
-        //背景画像の設定
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "wallpaper.jpg")?.draw(in: self.view.bounds)
-        let image: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        view.backgroundColor = UIColor(patternImage: image)
+            
+            
         
-        
-        //SecondViewの表示
-        secondView = UIView(frame: CGRect(x:0,y: view.bounds.width-30,width: 500,height: 500))
-        //secondView.backgroundColor = UIColor.white
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "road.jpg")?.draw(in: self.view.bounds)
-        let image2: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        secondView.backgroundColor = UIColor(patternImage: image2)
+//        //SecondViewの表示
+//        secondView = UIView(frame: CGRect(x:0,y: view.bounds.width-30,width: 500,height: 500))
+//        //secondView.backgroundColor = UIColor.white
+//        UIGraphicsBeginImageContext(self.view.frame.size)
+//        UIImage(named: "road.jpg")?.draw(in: self.view.bounds)
+//        let image2: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+//        UIGraphicsEndImageContext()
+//        secondView.backgroundColor = UIColor(patternImage: image2)
         
         
         // secondviewをviewに追加.
@@ -177,8 +228,31 @@ class fukiViewController: UIViewController,CLLocationManagerDelegate,UINavigatio
                         var wether:NSDictionary = eachWether as! NSDictionary
                         self.weather.text = String(describing: wether["main"]!)
                         self.weather.textColor = UIColor.white
+                        if String(describing: wether["main"]!)=="Sunny"  {
+                            UIGraphicsBeginImageContext(self.view.frame.size)
+                            UIImage(named: "sunnywall.png")?.draw(in: self.view.bounds)
+                            let image1: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+                            UIGraphicsEndImageContext()
+                            view.backgroundColor = UIColor(patternImage: image1)
+                        }
+                        if String(describing: wether["main"]!)=="Rainy"  {
+                            UIGraphicsBeginImageContext(self.view.frame.size)
+                            UIImage(named: "rainywall.png")?.draw(in: self.view.bounds)
+                            let image1: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+                            UIGraphicsEndImageContext()
+                            view.backgroundColor = UIColor(patternImage: image1)
+                        }
+                        if String(describing: wether["main"]!)=="Thunderstorm"  {
+                            UIGraphicsBeginImageContext(self.view.frame.size)
+                            UIImage(named: "thunderwall.png")?.draw(in: self.view.bounds)
+                            let image1: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
+                            UIGraphicsEndImageContext()
+                            view.backgroundColor = UIColor(patternImage: image1)
+                        }
+
                     }
                 }
+                
                 if (key as! String == "main") {
                     var result = data as! NSDictionary
                     self.humidty.text = "Humidty:\(String(describing:result["humidity"]!))"

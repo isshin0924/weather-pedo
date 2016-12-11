@@ -41,6 +41,11 @@
 		1B5D16781DDD6383009E3B4E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B5D16771DDD6383009E3B4E /* CoreImage.framework */; };
 		1BA185AA1DDFB160005D23A6 /* road.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BA185A91DDFB160005D23A6 /* road.jpg */; };
 		1BA37AA81DE3D1E600F942AB /* indexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA37AA71DE3D1E600F942AB /* indexViewController.swift */; };
+		1BB984141DFD74DB006BA21C /* evening.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BB984121DFD74DB006BA21C /* evening.png */; };
+		1BB984151DFD74DB006BA21C /* night.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BB984131DFD74DB006BA21C /* night.png */; };
+		1BB984191DFD779E006BA21C /* rainywall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BB984161DFD779E006BA21C /* rainywall.png */; };
+		1BB9841A1DFD779E006BA21C /* sunnywall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BB984171DFD779E006BA21C /* sunnywall.png */; };
+		1BB9841B1DFD779E006BA21C /* thunderwall.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BB984181DFD779E006BA21C /* thunderwall.png */; };
 		1BBBBC081DFBDD12004A1EFA /* IMG_0940.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 1BBBBC071DFBDD12004A1EFA /* IMG_0940.PNG */; };
 		1BBBBC0A1DFBE26D004A1EFA /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBBBC091DFBE26D004A1EFA /* thirdViewController.swift */; };
 		1BCA62C41DFAD0DB0099BEEC /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCA62C31DFAD0DB0099BEEC /* secondViewController.swift */; };
@@ -105,6 +110,11 @@
 		1B5D16771DDD6383009E3B4E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		1BA185A91DDFB160005D23A6 /* road.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = road.jpg; sourceTree = "<group>"; };
 		1BA37AA71DE3D1E600F942AB /* indexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = indexViewController.swift; sourceTree = "<group>"; };
+		1BB984121DFD74DB006BA21C /* evening.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = evening.png; sourceTree = "<group>"; };
+		1BB984131DFD74DB006BA21C /* night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = night.png; sourceTree = "<group>"; };
+		1BB984161DFD779E006BA21C /* rainywall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rainywall.png; sourceTree = "<group>"; };
+		1BB984171DFD779E006BA21C /* sunnywall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunnywall.png; sourceTree = "<group>"; };
+		1BB984181DFD779E006BA21C /* thunderwall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thunderwall.png; sourceTree = "<group>"; };
 		1BBBBC071DFBDD12004A1EFA /* IMG_0940.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0940.PNG; sourceTree = "<group>"; };
 		1BBBBC091DFBE26D004A1EFA /* thirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		1BCA62C31DFAD0DB0099BEEC /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +174,11 @@
 		1B0AA4CE1DDD566400AAE9BA /* runnnigweather */ = {
 			isa = PBXGroup;
 			children = (
+				1BB984161DFD779E006BA21C /* rainywall.png */,
+				1BB984171DFD779E006BA21C /* sunnywall.png */,
+				1BB984181DFD779E006BA21C /* thunderwall.png */,
+				1BB984121DFD74DB006BA21C /* evening.png */,
+				1BB984131DFD74DB006BA21C /* night.png */,
 				1BA185A91DDFB160005D23A6 /* road.jpg */,
 				1BF5CE3A1DDF930100B203B5 /* wallpaper.jpg */,
 				1B5D16691DDD62B5009E3B4E /* sunny.png */,
@@ -343,6 +358,7 @@
 				1B0AA4D71DDD566400AAE9BA /* Assets.xcassets in Resources */,
 				1B0AA5011DDD5A9800AAE9BA /* runner30.png in Resources */,
 				1B0AA51C1DDD5F4900AAE9BA /* para3.png in Resources */,
+				1BB984191DFD779E006BA21C /* rainywall.png in Resources */,
 				1B5D16731DDD62B5009E3B4E /* mist.png in Resources */,
 				1B0AA4D51DDD566400AAE9BA /* Main.storyboard in Resources */,
 				1BA185AA1DDFB160005D23A6 /* road.jpg in Resources */,
@@ -350,14 +366,18 @@
 				1B5D166F1DDD62B5009E3B4E /* sunny.png in Resources */,
 				1B0AA51B1DDD5F4900AAE9BA /* para2.png in Resources */,
 				1B5D16721DDD62B5009E3B4E /* clouds.png in Resources */,
+				1BB9841A1DFD779E006BA21C /* sunnywall.png in Resources */,
 				1B0AA5071DDD5BEF00AAE9BA /* weather.png in Resources */,
 				1B5D16711DDD62B5009E3B4E /* sunnyicon.png in Resources */,
+				1BB984141DFD74DB006BA21C /* evening.png in Resources */,
 				1B0AA51A1DDD5F4900AAE9BA /* para1.png in Resources */,
 				1B0AA51D1DDD5F4900AAE9BA /* para4.png in Resources */,
 				1B0AA5021DDD5A9800AAE9BA /* runner60.png in Resources */,
 				1B0AA5081DDD5BEF00AAE9BA /* weather60.png in Resources */,
 				1B5D16701DDD62B5009E3B4E /* sunny2.png in Resources */,
+				1BB984151DFD74DB006BA21C /* night.png in Resources */,
 				1B0AA5061DDD5BEF00AAE9BA /* weather30.png in Resources */,
+				1BB9841B1DFD779E006BA21C /* thunderwall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
