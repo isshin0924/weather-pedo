@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SystemConfiguration
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let ud = UserDefaults.standard
+        // デフォルト値の設定
+        let dic = ["firstLaunch": true]
+        ud.register(defaults: dic)
         return true
     }
 
@@ -35,11 +40,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
+            }
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    func CheckReachability(host_name:String)->Bool{
+        let reachability = SCNetworkReachabilityCreateWithName(nil, host_name)!
+        var flags = SCNetworkReachabilityFlags.connectionAutomatic
+        if !SCNetworkReachabilityGetFlags(reachability, &flags) {
+            return false
+        }
+        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        return (isReachable && !needsConnection)
+    }
+
 
 
 }
