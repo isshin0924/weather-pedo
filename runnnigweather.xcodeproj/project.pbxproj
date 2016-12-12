@@ -265,8 +265,13 @@
 				TargetAttributes = {
 					1B0AA4CB1DDD566400AAE9BA = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = Q92N4QX93V;
+						DevelopmentTeam = 38K9U2U4BH;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					1B0AA4DF1DDD566400AAE9BA = {
 						CreatedOnToolsVersion = 8.1;
@@ -501,10 +506,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q92N4QX93V;
+				DEVELOPMENT_TEAM = 38K9U2U4BH;
 				INFOPLIST_FILE = runnnigweather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.isshin.runnnigweather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isshintoyonaga.runnnigweatherisshin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -514,10 +520,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Q92N4QX93V;
+				DEVELOPMENT_TEAM = 38K9U2U4BH;
 				INFOPLIST_FILE = runnnigweather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.isshin.runnnigweather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isshintoyonaga.runnnigweatherisshin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

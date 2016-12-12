@@ -63,6 +63,7 @@ class fukiViewController: UIViewController,CLLocationManagerDelegate,UINavigatio
             let image: UIImage! = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             secondView.backgroundColor = UIColor(patternImage: image)
+            //secondView.backgroundColor = UIColor.blue
         }
         else if(hour >= 16 && hour < 19){print("evening")
             //SecondViewの表示
@@ -193,7 +194,17 @@ class fukiViewController: UIViewController,CLLocationManagerDelegate,UINavigatio
         // まだ認証が得られていない場合は、認証ダイアログを表示
         // (このAppの使用中のみ許可の設定) 説明を共通の項目を参照
         if(status == .notDetermined) {
-            self.myLocationManager.requestAlwaysAuthorization()
+            print(status)
+            if(myLocationManager != nil){
+                self.myLocationManager.requestAlwaysAuthorization()
+            }else{
+//                let alertController = UIAlertController(title: "No Function", message: "This devise doesn't have GPS function.Change devise.", preferredStyle: .alert)
+//                
+//                let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+//                alertController.addAction(defaultAction)
+//                present(alertController, animated: true, completion: nil)
+                print("NO function")
+            }
         }
         
         // 取得精度の設定.

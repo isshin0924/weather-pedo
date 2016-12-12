@@ -118,7 +118,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runnnigweather/fukiViewController.swift"
@@ -138,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runnnigweather/fukiViewController.swift"
-            timestampString = "503167959.618533"
+            timestampString = "503204057.038691"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -153,13 +153,13 @@
                   symbolName = "runnnigweather.fukiViewController.viewDidLoad () -&gt; ()"
                   moduleName = "runnnigweather"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/isshin/Downloads/weather-pedo-master/runnnigweather/fukiViewController.swift"
-                  timestampString = "503167714.201072"
+                  urlString = "file:///Users/isshin/githubapps/weather&amp;pedo/runnnigweather/fukiViewController.swift"
+                  timestampString = "503206392.918395"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "3560">
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "3768">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -168,13 +168,13 @@
                   symbolName = "runnnigweather.fukiViewController.viewDidLoad () -&gt; ()"
                   moduleName = "runnnigweather"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/isshin/Downloads/weather-pedo-master/runnnigweather/fukiViewController.swift"
-                  timestampString = "503167714.202618"
+                  urlString = "file:///Users/isshin/githubapps/weather&amp;pedo/runnnigweather/fukiViewController.swift"
+                  timestampString = "503206392.919923"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "3720">
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "3928">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runnnigweather/fukiViewController.swift"
-            timestampString = "503167959.618533"
+            timestampString = "503204057.038691"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -201,13 +201,13 @@
                   symbolName = "runnnigweather.fukiViewController.viewDidLoad () -&gt; ()"
                   moduleName = "runnnigweather"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/isshin/Downloads/weather-pedo-master/runnnigweather/fukiViewController.swift"
-                  timestampString = "503167714.205778"
+                  urlString = "file:///Users/isshin/githubapps/weather&amp;pedo/runnnigweather/fukiViewController.swift"
+                  timestampString = "503206392.92308"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "5868">
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "5860">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -216,13 +216,13 @@
                   symbolName = "runnnigweather.fukiViewController.viewDidLoad () -&gt; ()"
                   moduleName = "runnnigweather"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/isshin/Downloads/weather-pedo-master/runnnigweather/fukiViewController.swift"
-                  timestampString = "503167714.207303"
+                  urlString = "file:///Users/isshin/githubapps/weather&amp;pedo/runnnigweather/fukiViewController.swift"
+                  timestampString = "503206392.92481"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "5896">
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "5888">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -234,12 +234,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "runnnigweather/fukiViewController.swift"
-            timestampString = "503167959.618533"
+            timestampString = "503204057.038691"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runnnigweather/fukiViewController.swift"
+            timestampString = "503202476.806745"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runnnigweather/fukiViewController.swift"
+            timestampString = "503204323.307239"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "runnnigweather/fukiViewController.swift"
+            timestampString = "503204324.226768"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
+            landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
